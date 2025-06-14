@@ -1,10 +1,11 @@
 import requests
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
-
 import os
 
-TOKEN = os.environ.get("8138354482:AAHFGXt49Cth3KBK8teojxH9aW3R0eFwXH8")  # Tokenni render.yaml orqali olamiz
+# ✅ Tokenni atrof-muhit o'zgaruvchisi (environment variable) orqali olamiz
+TOKEN = os.environ.get("BOT_TOKEN")
+
 THINGSPEAK_CHANNEL_ID = "2973404"
 THINGSPEAK_READ_API_KEY = "UB9BRI5LBT0HWAUF"
 
