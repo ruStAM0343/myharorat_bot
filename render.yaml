@@ -1,6 +1,9 @@
 services:
-  - type: worker
-    name: my-telegram-bot
+  - type: web
+    name: myharorat-bot
     env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python bot.py"
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: "8138354482:AAHFGXt49Cth3KBK8teojxH9aW3R0eFwXH8"
